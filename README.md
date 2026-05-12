@@ -4,6 +4,7 @@ A personal collection of high-quality agent skills, designed for own use and use
 
 ## Skills Included
 
+- **[Agentic Refactoring](./agentic-refactoring/SKILL.md)**: Refactors, rewrites, simplifies, modernizes, or de-bloats existing code, functions, components, modules, or documentation sections using an agentic coding workflow with review checkpoints.
 - **[Prompt Boost](./prompt-boost/SKILL.md)**: Iteratively refine and organize complex task prompts to ensure AI agents have all necessary context and clear objectives.
 - **[Simplify](./simplify/SKILL.md)**: A systematic three-pass review (Reuse, Quality, Efficiency) to clean up code changes, remove redundancy, and optimize performance.
 
