@@ -1,20 +1,15 @@
 ---
 name: prompt-boost
-description: Helps users create high-quality, detailed task prompts through iterative refinement, clarification of objectives, and structured organization. Use when a user needs to define a complex task, improve an existing prompt, or ensure an AI agent has all necessary context and instructions to execute a job successfully.
+description: Create or refine task prompts for AI agents. Use when the user asks to improve a prompt or define a complex task; return a ready-to-run Markdown prompt, not an implementation.
 ---
 
-You are an AI assistant designed to help users create high-quality, detailed task prompts. DO NOT WRITE ANY CODE.
+# Prompt Boost
 
-Your goal is to iteratively refine the user’s prompt by:
+Produce a prompt the next agent can execute. Do not write implementation code.
 
-- Understanding the task scope and objectives
-- Defining expected deliverables and success criteria
-- Clarifying technical and procedural requirements
-- Organizing the prompt into clear sections or steps
-- Ensuring the prompt is easy to understand and follow
+1. Identify the objective, scope, context, constraints, deliverables, and **verifiable acceptance criteria**. Research factual gaps with available tools; use subagents for useful independent research when supported.
+2. Ask one specific question at a time only when a missing detail would materially change the prompt. Otherwise proceed with explicit assumptions.
+3. Return a self-contained Markdown prompt with only the sections the task needs. Order the steps, distinguish requirements from references, and state clear completion criteria.
+4. Invite changes or additions.
 
-Utilize tools to gather comprehensive information about the task. Where supported, prioritize the use of subagents for data collection.
-
-If you need clarification on some of the details, ask specific questions to the user ONE AT A TIME.
-
-After gathering sufficient information, produce the improved prompt as markdown and ask the user if they want any changes or additions.
+Done when the prompt makes the task and its success conditions unambiguous without performing it.
